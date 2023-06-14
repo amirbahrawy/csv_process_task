@@ -1,25 +1,22 @@
 # CsvProcess
 
 This class provides a simple way to process CSV files. It can be used to calculate the average quantity of each product and the most popular brand for each product.
+##Getting Started
+To get started with this project, follow the instructions below.
+### Prerequisites
+Dart SDK: Make sure you have Dart installed on your machine. You can download it from the official Dart website: https://dart.dev
+### Usage
+1- Place the input CSV file in the desired folder.
 
-## Usage
-To use the CsvProcess class, first, create a new instance of the class. Then, call the processInputFile method, passing in the name of the input file and the path to the output directory.
+2- Open a terminal or command prompt and navigate to the directory where your Dart script is located.
+Running the Script
 
+To run the script and process the input CSV file, use the following command:
+```shell
+dart main.dart
+```
 The processInputFile method will read the input file, parse the data into a list of objects, and then write the output to two files. The first file will contain the average quantity of each product, and the second file will contain the most popular brand for each product.
 
-Example
-The following code shows how to use the CsvProcess class to process a CSV file:
-```dart
-import 'package:csv_process/csv_process.dart';
-
-void main() {
-// Create a new instance of the CsvProcess class.
-final csvProcess = CsvProcess();
-
-// Call the processInputFile method, passing in the name of the input file and the path to the output directory.
-csvProcess.processInputFile('input_example.csv', 'users/output');
-}
-```
 Output
 The processInputFile method will write two files to the output directory. The first file will contain the average quantity of each product, and the second file will contain the most popular brand for each product.
 Assume the input file contain this data
